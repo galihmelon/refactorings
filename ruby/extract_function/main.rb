@@ -1,4 +1,10 @@
-require_relative "extract_function"
+require_relative "others"
+
+require_relative "original"
+alias print_owning_original print_owning
+
+require_relative "refactored"
+alias print_owning_refactored print_owning
 
 order_1 = Order.new(1)
 order_2 = Order.new(2)
@@ -7,10 +13,8 @@ orders = [order_1, order_2, order_3]
 
 invoice = Invoice.new("My Name", orders)
 
-extract_function = ExtractFunctionOriginal.new
-extract_function.print_owning(invoice)
+print_owning_original(invoice)
 
 puts
 
-extract_function = ExtractFunctionRefactored.new
-extract_function.print_owning(invoice)
+print_owning_refactored(invoice)
