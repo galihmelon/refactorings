@@ -1,4 +1,4 @@
-https://refactoring.com/catalog/extractVariable.html
+https://refactoring.com/catalog/inlineFunction.html
 
 How to run tests (you may need to change directory to the example folder first):
 ```bash
